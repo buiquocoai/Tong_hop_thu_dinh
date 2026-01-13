@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo thu đóng đinh đến 2025</title>
+
+<style>
+:root{
+  --primary:#0b7cc1;
+  --accent:#ff9800;
+  --bg:#f4f6f9;
+  --card:#ffffff;
+  --border:#dfe6ee;
+}
+
+body{
+  margin:0;
+  font-family:"Segoe UI", Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:#2b2b2b;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+/* HEADER */
+.header{
+  background:linear-gradient(135deg,#0b7cc1,#0a5d90);
+  color:#fff;
+  padding:28px 20px;
+  border-radius:18px;
+  text-align:center;
+}
+
+.header h1{
+  margin:0;
+  font-size:1.8rem;
+  text-transform:uppercase;
+}
+
+.header p{
+  margin-top:8px;
+  font-size:0.95rem;
+  opacity:0.95;
+}
+
+/* SUMMARY */
+.summary{
+  margin-top:26px;
+}
+
+.summary-box{
+  background:#fff;
+  border-radius:18px;
+  padding:24px;
+  text-align:center;
+  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+}
+
+.summary-box .label{
+  font-size:0.95rem;
+  color:#666;
+}
+
+.summary-box .value{
+  font-size:2.2rem;
+  font-weight:800;
+  color:var(--primary);
+  margin:10px 0;
+}
+
+.summary-box .note{
+  font-size:0.9rem;
+  color:#444;
+}
+
+/* SECTION */
+.section{
+  margin-top:30px;
+  background:var(--card);
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+.section h2{
+  margin-top:0;
+  color:var(--primary);
+  border-left:6px solid var(--primary);
+  padding-left:12px;
+  font-size:1.3rem;
+}
+
+/* DESKTOP TABLE */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:18px;
+}
+
+th, td{
+  border:1px solid var(--border);
+  padding:12px;
+  text-align:center;
+}
+
+th{
+  background:#eef6fc;
+}
+
+.amount{
+  text-align:right;
+  font-weight:600;
+  color:#0b7cc1;
+}
+
+.total-row{
+  background:#e6f2fb;
+  font-weight:800;
+}
+
+/* MOBILE CARDS */
+.mobile-list{
+  display:none;
+}
+
+/* NOTE BOX */
+.note-box{
+  margin-top:10px;
+  background:#fff3cd;
+  border-left:6px solid var(--accent);
+  padding:10px 12px;
+  border-radius:10px;
+  font-size:0.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  table{display:none;}
+  .mobile-list{display:block;}
+
+  .card{
+    background:#fff;
+    border-radius:16px;
+    padding:16px;
+    margin-bottom:14px;
+    box-shadow:0 5px 16px rgba(0,0,0,0.07);
+  }
+
+  .card .year{
+    font-weight:700;
+    color:var(--primary);
+    margin-bottom:8px;
+    font-size:1.05rem;
+  }
+
+  .row{
+    display:flex;
+    justify-content:space-between;
+    margin:4px 0;
+    font-size:0.95rem;
+  }
+
+  .row span:last-child{
+    font-weight:600;
+    color:#0b7cc1;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <h1>TỔNG HỢP THU ĐÓNG ĐINH ĐẾN NĂM 2025</h1>
+  <p>Báo cáo tài chính phục vụ xây dựng Nhà Thờ Bùi Tộc Thứ Chi</p>
+</div>
+
+<!-- SUMMARY -->
+<div class="summary">
+  <div class="summary-box">
+    <div class="label">TỔNG THU ĐÓNG ĐINH (GỐC + LÃI)</div>
+    <div class="value">407.760.000 VNĐ</div>
+    <div class="note">Tính đến năm 2025</div>
+  </div>
+</div>
+
+<!-- SECTION -->
+<div class="section">
+<h2>Chi tiết thu theo từng năm</h2>
+
+<!-- DESKTOP TABLE -->
+<table>
+<tr>
+  <th>Năm</th><th>Gốc</th><th>Lãi</th><th>Gốc + Lãi</th><th>Ghi chú</th>
+</tr>
+
+<tr>
+  <td>2020</td>
+  <td class="amount">46.000.000</td>
+  <td class="amount">1.000.000</td>
+  <td class="amount">47.000.000</td>
+  <td>
+    Toàn bộ thu đinh Quỳnh Thắng đã đóng đủ 5 năm<br>
+    Còn 9 đinh An Hoà chưa đóng (chỉ có Sơn đóng đủ 6 năm)
+  </td>
+</tr>
+
+<tr><td>2021</td><td class="amount">34.000.000</td><td class="amount">3.700.000</td><td class="amount">37.700.000</td><td></td></tr>
+<tr><td>2022</td><td class="amount">40.000.000</td><td class="amount">7.810.000</td><td class="amount">47.810.000</td><td></td></tr>
+<tr><td>2023</td><td class="amount">36.000.000</td><td class="amount">14.050.000</td><td class="amount">50.050.000</td><td></td></tr>
+<tr><td>2024</td><td class="amount">46.000.000</td><td class="amount">8.200.000</td><td class="amount">54.200.000</td><td></td></tr>
+<tr><td>2025 (L1)</td><td class="amount">66.000.000</td><td>-</td><td class="amount">66.000.000</td><td></td></tr>
+<tr><td>2025 (L2)</td><td class="amount">125.000.000</td><td>-</td><td class="amount">125.000.000</td><td>Còn 4 đinh chưa đóng</td></tr>
+
+<tr class="total-row">
+  <td>TỔNG</td>
+  <td class="amount">373.000.000</td>
+  <td class="amount">34.760.000</td>
+  <td class="amount">407.760.000</td>
+  <td></td>
+</tr>
+</table>
+
+<!-- MOBILE CARDS -->
+<div class="mobile-list">
+
+<div class="card">
+  <div class="year">2020</div>
+  <div class="row"><span>Gốc</span><span>46.000.000</span></div>
+  <div class="row"><span>Lãi</span><span>1.000.000</span></div>
+  <div class="row"><span>Tổng</span><span>47.000.000</span></div>
+  <div class="note-box">
+    Toàn bộ thu đinh Quỳnh Thắng đã đóng đủ 5 năm<br>
+    Còn 9 đinh An Hoà chưa đóng
+  </div>
+</div>
+
+<div class="card"><div class="year">2021</div><div class="row"><span>Tổng</span><span>37.700.000</span></div></div>
+<div class="card"><div class="year">2022</div><div class="row"><span>Tổng</span><span>47.810.000</span></div></div>
+<div class="card"><div class="year">2023</div><div class="row"><span>Tổng</span><span>50.050.000</span></div></div>
+<div class="card"><div class="year">2024</div><div class="row"><span>Tổng</span><span>54.200.000</span></div></div>
+<div class="card"><div class="year">2025 (L1)</div><div class="row"><span>Tổng</span><span>66.000.000</span></div></div>
+<div class="card"><div class="year">2025 (L2)</div><div class="row"><span>Tổng</span><span>125.000.000</span></div><div class="note-box">Còn 4 đinh chưa đóng</div></div>
+
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
